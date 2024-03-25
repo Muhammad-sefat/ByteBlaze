@@ -10,7 +10,7 @@ const BlogCard = ({ blog, deletable, handleDelete }) => {
     <div className="flex relative">
       <Link
         to={`/blog/${id}`}
-        className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50"
+        className="max-w-sm mx-auto group transition hover:scale-105 hover:no-underline focus:no-underline dark:bg-gray-50"
       >
         <img
           role="presentation"

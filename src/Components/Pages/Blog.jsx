@@ -40,8 +40,8 @@ const Blog = () => {
             to={""}
             onClick={() => setIndex(0)}
             className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
-              index === 0 ? "border border-b-0" : "border-b"
-            } dark:border-gray-600 dark:text-gray-600`}
+              index === 0 ? "border border-b-0 bg-purple-500" : "border-b"
+            } dark:border-gray-600 dark:text-gray-600 rounded-md`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,14 +55,14 @@ const Blog = () => {
             >
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
             </svg>
-            <span>Content</span>
+            <span className="text-lg font-bold">Content</span>
           </Link>
           <Link
             to={"author"}
             onClick={() => setIndex(1)}
             className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
-              index === 1 ? "border border-b-0" : "border-b"
-            } dark:border-gray-600 dark:text-gray-600`}
+              index === 1 ? "border border-b-0 bg-purple-500" : "border-b"
+            } dark:border-gray-600 dark:text-gray-600 rounded-md`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Blog = () => {
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
-            <span>Author</span>
+            <span className="text-lg font-bold">Author</span>
           </Link>
           <div
             onClick={() => handleBtn(blog)}
